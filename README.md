@@ -1,6 +1,6 @@
 # 博尔简历自投插件
 
-一个面向 BOSS 直聘的 Chrome / Edge Manifest V3 扩展。当前版本为 `0.6.3`，用于把“使用 BOSS 筛选结果 → 试运行 → 单次批量授权 → 逐个投递 → 留痕”串成可控流程。
+一个面向 BOSS 直聘的 Chrome / Edge Manifest V3 扩展。用于把“使用 BOSS 筛选结果 → 试运行 → 单次批量授权 → 逐个投递 → 留痕”串成可控流程。
 
 ## 当前能力
 
@@ -22,17 +22,7 @@
 - 保存最近 500 条扫描、设置、跳过和投递记录。
 - 每日上限可配置为 1–150，并在每次真实点击前强制检查；实际可用额度以 BOSS 页面和账号状态为准。
 
-## 安装测试
-
-### 从 GitHub 下载
-
-1. 点击仓库页面右上角 `Code` → `Download ZIP`。
-2. 解压 ZIP，进入包含 `manifest.json` 的项目文件夹。
-3. Chrome 打开 `chrome://extensions/`，或 Edge 打开 `edge://extensions/`。
-4. 开启“开发者模式”，点击“加载已解压的扩展程序”。
-5. 选择上述项目文件夹。
-
-### 开始使用
+## 安装与使用
 
 1. Chrome 打开 `chrome://extensions/`，或 Edge 打开 `edge://extensions/`。
 2. 开启“开发者模式”。
