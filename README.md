@@ -77,3 +77,6 @@ node --test tests/matching.test.js
 ## 开源许可
 
 [MIT License](LICENSE)
+
+📸 运行效果截图
+<img width="1900" height="864" alt="image" src="https://github.com/user-attachments/assets/950bbed7-7c54-431b-bbe6-9a4a774bdeb6" />
