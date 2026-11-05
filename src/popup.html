@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>博尔简历自投</title></head>
+<body>
+  <main>
+    <div class="brand"><div class="logo">博</div><div><h1>博尔简历自投</h1><p>先试运行，再逐步放开</p></div></div>
+    <section class="mode"><div><b>试运行模式</b><small>开启时只识别和标记，不会真实投递</small></div><label class="switch"><input id="dryRun" type="checkbox" checked><span></span></label></section>
+    <section>
+      <label>目标关键词<input id="includeKeywords" placeholder="如：产品经理, AI产品"></label>
+      <label>排除关键词<input id="excludeKeywords" placeholder="如：销售, 保险, 中介"></label>
+      <div class="row"><label>城市<input id="city" placeholder="如：上海"></label><label>最低月薪(K)<input id="minSalaryK" type="number" min="0" max="200"></label></div>
+      <div class="row"><label>单次投递数量<select id="batchSize"><option value="5">5 个</option><option value="10">10 个</option><option value="20">20 个</option><option value="30">30 个</option><option value="50">50 个</option></select></label><label>每日上限<input id="dailyLimit" type="number" min="1" max="150"></label></div>
+      <label>间隔（秒）<div class="inline"><input id="minDelaySeconds" type="number" min="2"><i>–</i><input id="maxDelaySeconds" type="number" min="2"></div></label>
+      <p class="hint">点击“一键投递”时只确认一次；运行中可随时停止，遇到验证码或异常会自动暂停。</p>
+    </section>
+    <button id="save">保存设置</button><div id="notice"></div>
+    <section class="logs"><h2>最近记录</h2><div id="events">暂无记录</div></section>
+  </main>
+  <script src="popup.js"></script>
+</body></html>

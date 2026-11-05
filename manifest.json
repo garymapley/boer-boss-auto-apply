@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "博尔简历自投",
+  "description": "面向 BOSS 直聘的可控简历投递助手：先试运行、逐条确认、全程留痕。",
+  "version": "0.6.3",
+  "minimum_chrome_version": "109",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.zhipin.com/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "博尔简历自投",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/*"],
+      "js": ["src/matching.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+#boer-auto-apply-root {
+  all: initial;
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483647;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+.boer-match { outline: 2px solid #6f4cff !important; outline-offset: 2px !important; }
+.boer-preview { outline: 3px solid #16a36a !important; outline-offset: 2px !important; }
+.boer-skip { opacity: .58 !important; }
